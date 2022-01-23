@@ -1,0 +1,158 @@
+﻿
+
+*, body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.box1 {
+    background-image: url(image/baner.jpg);
+    height: 100vh;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.header {
+    background: #010101b3;
+    position: fixed;
+    width: 100%;
+    top: 0;
+}
+
+.nav {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row-reverse;
+    padding: 0 22px;
+}
+
+ul {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none
+}
+
+.ulnav {
+    display: flex;
+    padding: 23px
+}
+
+    .ulnav li {
+    }
+
+    .ulnav a {
+        color: white;
+        padding: 0 14px;
+    }
+
+.logo {
+    display: flex;
+    align-items: center;
+    color: white;
+    font-size: 12px;
+}
+
+.ulnav li:hover, .active {
+    border-bottom: 2px solid #ffbc01;
+}
+
+.boox {
+    display: flex;
+    direction: rtl;
+}
+
+.fsistem {
+    display: block;
+}
+
+.fgoshi {
+    display: none;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.col-md-4 {
+    width: 25%;
+}
+
+.col-md-8 {
+    width: 75%;
+}
+.col-md-6 {
+    width:50%;
+}
+.box3 {
+    padding: 10px;
+}
+
+.box4 {
+    padding: 10px;
+    background: white;
+    margin: 11px;
+    box-shadow: 0 0 5px #828282;
+}
+
+    .box3 img, .box4 img {
+        width: 100%;
+    }
+
+.box3 h4 {
+}
+
+.box3 p {
+}
+
+.btn {
+    padding: 5px 10px;
+    background: #ffbc01;
+    color: #050505;
+    display: inline-block;
+    margin-top: 13px
+}
+
+@media(max-width:900px) {
+    .row {
+    }
+
+    .col-md-4, .col-md-8, .col-md-6 {
+        width: 100%;
+    }
+
+    .boox {
+        display: block;
+        width: 100%;
+        direction: rtl;
+    }
+
+    .ulnav {
+        position: fixed;
+           width: 86%;
+    top: 128px;
+        flex-direction: column;
+        background: #303b3e;
+        display: none
+    }
+
+    .change .ulnav {
+        display: block
+    }
+
+
+    .fsistem {
+        display: none;
+    }
+
+    .fgoshi {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+    }
+}
